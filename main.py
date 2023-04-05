@@ -18,7 +18,7 @@ def next_card():
         # if all words have been learned, reset the learned column
         df['learned'] = False
         available_words = df
-    # get a random word and its translation
+    # get a random word and its translation random.choice(list(dict_name.items()))
     row = available_words.sample().iloc[0]
     word = row['French']
     translation = row['English']
